@@ -45,7 +45,7 @@ def create_rfm_df(df):
     
     return rfm_df
 
-all_df = pd.read_csv('all_df.csv')
+all_df = pd.read_csv('/mount/src/streamlit_analisis_data/dashboard/all_df.csv')
 
 datetime_columns = ['order_purchase_timestamp']
 all_df.sort_values(by='order_purchase_timestamp', inplace=True)
